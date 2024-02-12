@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Eszter-React-Portfolio-Website/static/css/main.ea1b4c6c.css",
+    "main.css": "/Eszter-React-Portfolio-Website/static/css/main.b990ae5b.css",
     "main.js": "/Eszter-React-Portfolio-Website/static/js/main.f313e238.js",
     "static/media/Profile.jpg": "/Eszter-React-Portfolio-Website/static/media/Profile.7eb656084aa2b2168a64.jpg",
     "static/media/WEBESTI_favicon.png": "/Eszter-React-Portfolio-Website/static/media/WEBESTI_favicon.a11cc680285b61939819.png",
     "index.html": "/Eszter-React-Portfolio-Website/index.html",
-    "main.ea1b4c6c.css.map": "/Eszter-React-Portfolio-Website/static/css/main.ea1b4c6c.css.map",
+    "main.b990ae5b.css.map": "/Eszter-React-Portfolio-Website/static/css/main.b990ae5b.css.map",
     "main.f313e238.js.map": "/Eszter-React-Portfolio-Website/static/js/main.f313e238.js.map"
   },
   "entrypoints": [
-    "static/css/main.ea1b4c6c.css",
+    "static/css/main.b990ae5b.css",
     "static/js/main.f313e238.js"
   ]
 }
