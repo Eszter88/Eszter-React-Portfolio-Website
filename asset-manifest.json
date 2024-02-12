@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Eszter-React-Portfolio-Website/static/css/main.4f8f7d1c.css",
-    "main.js": "/Eszter-React-Portfolio-Website/static/js/main.70718d9d.js",
+    "main.css": "/Eszter-React-Portfolio-Website/static/css/main.ea1b4c6c.css",
+    "main.js": "/Eszter-React-Portfolio-Website/static/js/main.f313e238.js",
     "static/media/Profile.jpg": "/Eszter-React-Portfolio-Website/static/media/Profile.7eb656084aa2b2168a64.jpg",
     "static/media/WEBESTI_favicon.png": "/Eszter-React-Portfolio-Website/static/media/WEBESTI_favicon.a11cc680285b61939819.png",
     "index.html": "/Eszter-React-Portfolio-Website/index.html",
-    "main.4f8f7d1c.css.map": "/Eszter-React-Portfolio-Website/static/css/main.4f8f7d1c.css.map",
-    "main.70718d9d.js.map": "/Eszter-React-Portfolio-Website/static/js/main.70718d9d.js.map"
+    "main.ea1b4c6c.css.map": "/Eszter-React-Portfolio-Website/static/css/main.ea1b4c6c.css.map",
+    "main.f313e238.js.map": "/Eszter-React-Portfolio-Website/static/js/main.f313e238.js.map"
   },
   "entrypoints": [
-    "static/css/main.4f8f7d1c.css",
-    "static/js/main.70718d9d.js"
+    "static/css/main.ea1b4c6c.css",
+    "static/js/main.f313e238.js"
   ]
 }
