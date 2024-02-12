@@ -1,0 +1,16 @@
+@use "../../assets/styles/globals/breakpoints" as b;
+
+.project-list {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@media screen and (max-width: b.$mobile-breakpoint) {
+  .project-list {
+    align-items: flex-start;
+  }
+}

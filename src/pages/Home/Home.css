@@ -1,0 +1,54 @@
+:root {
+  --text-white: white;
+  --text-black: black;
+  --bg-dark: #002d5b;
+  --bg-light: #0097b2;
+  --bg-navigation: #181818;
+  --accent-color: #ffd700;
+  overflow: auto;
+  background-color: var(--bg-dark);
+}
+
+.home-page .image-zone {
+  max-width: 500px;
+  overflow: hidden;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+.home-page .profile-img {
+  max-width: 500px;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 20px;
+}
+.home-page .animate.pop {
+  animation-name: animate-pop;
+  animation-timing-function: cubic-bezier(0.26, 0.53, 0.74, 1.48);
+  animation-duration: 0.5s;
+}
+@keyframes animate-pop {
+  0% {
+    opacity: 0;
+    transform: scale(0.5, 0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}
+@media screen and (min-width: 1280px) {
+  .home-page .image-zone {
+    margin-right: 10%;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .home-page .home-page {
+    margin-left: 8rem;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .home-page .home-page {
+    justify-content: center;
+  }
+}/*# sourceMappingURL=Home.css.map */

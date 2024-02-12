@@ -1,0 +1,71 @@
+:root {
+  --text-white: white;
+  --text-black: black;
+  --bg-dark: #002d5b;
+  --bg-light: #0097b2;
+  --bg-navigation: #181818;
+  --accent-color: #ffd700;
+  overflow: auto;
+  background-color: var(--bg-dark);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  margin-left: 10%;
+  padding-left: 5%;
+  transform-style: preserve-3d;
+  animation: fadeIn 1s forwards;
+  animation-delay: 1s;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-wrap: wrap;
+  }
+  .text-zone {
+    margin-top: 6rem;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .container {
+    margin-left: 0;
+    padding: 5%;
+  }
+  .container.contact-page .text-zone, .container.about-page .text-zone, .container.portfolio-page .text-zone {
+    width: 100%;
+    padding: 20px;
+  }
+  .container .main {
+    margin-top: 5rem;
+  }
+  .container.portfolio-page {
+    box-sizing: border-box;
+  }
+  .container.portfolio-page h1.page-title {
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+  .container.portfolio-page .image-box {
+    height: 200px;
+    max-width: calc(50% - 10px);
+  }
+  .tags {
+    display: none;
+  }
+}
+.loader {
+  position: absolute;
+  height: 100px;
+  top: calc(50% - 50px);
+  left: calc(50% - 50px);
+  animation: fadeOut 1s 1s;
+  animation-fill-mode: forwards;
+  z-index: 10;
+}
+.loader p {
+  font-size: 64px;
+  color: #ffd700;
+}/*# sourceMappingURL=Layout.css.map */

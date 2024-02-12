@@ -1,0 +1,193 @@
+.nav-bar {
+  background-color: var(--bg-navigation);
+  width: 8rem;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  z-index: 10;
+}
+.nav-bar .logo {
+  padding: 8px 0;
+}
+.nav-bar .logo img {
+  margin: 8px auto;
+  width: 100%;
+  height: auto;
+}
+
+.dark-toggle {
+  font-size: 25px;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+}
+nav a {
+  font-size: 32px;
+  color: #4d4d4e;
+  line-height: 60px;
+  height: 6rem;
+  text-decoration: none;
+  position: relative;
+  display: block;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+nav a i {
+  transition: all 0.3s ease-out;
+}
+nav a:hover {
+  color: #ffd700;
+}
+nav a:hover svg {
+  opacity: 0;
+}
+nav a:hover:after {
+  opacity: 1;
+}
+nav a:after {
+  content: "";
+  font-size: 12px;
+  letter-spacing: 2px;
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  transition: all 0.3s ease-out;
+}
+nav a:first-child:after {
+  content: "HOME";
+}
+nav a.about-link:after {
+  content: "ABOUT";
+}
+nav a.contact-link:after {
+  content: "CONTACT";
+}
+nav a.skills-link:after {
+  content: "SKILLS";
+}
+nav a.portfolio-link:after {
+  content: "PORTFOLIO";
+}
+nav a.active svg {
+  color: #ffd700;
+}
+
+.nav-bar ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  padding-left: 0;
+}
+.nav-bar ul li {
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-bar ul li a {
+  font-size: 25px;
+}
+.nav-bar ul li a:hover svg {
+  color: #ffd700;
+}
+
+.hamburger {
+  position: absolute;
+  top: 1.5rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 31px;
+  height: 21px;
+}
+
+.bar {
+  height: 3px;
+  width: 100%;
+  border-radius: 10px;
+  background-color: white;
+  transform-origin: 1px;
+  transition: all 0.3s linear;
+}
+
+@media screen and (max-width: 1280px) {
+  .nav-bar {
+    width: 100vw;
+    height: 8rem;
+    top: 0;
+    flex-direction: row;
+  }
+  .nav-bar .logo {
+    padding: 0;
+  }
+  .nav-bar .logo img {
+    margin: 0;
+    width: 80px;
+    height: auto;
+  }
+  .nav-bar nav {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav-bar nav a {
+    width: 8rem;
+  }
+  .nav-bar ul {
+    flex-direction: row;
+  }
+  .nav-bar ul li {
+    width: 4rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  nav {
+    /*display: none;
+    width: 100%;
+    position: fixed;
+    left: 100%;
+    opacity: 0;
+    margin-left: 0;
+    float: left;
+    overflow: hidden;
+    text-align: center;
+    height: 5rem;
+    top: 5rem;
+    margin-top: 0;*/
+    display: none;
+    top: 0;
+    background: #181818;
+    transition: all 0.3s ease-out;
+  }
+  nav.show {
+    left: 0;
+    display: inherit;
+  }
+  .nav-bar ul {
+    display: none;
+  }
+  .hamburger {
+    display: flex !important;
+  }
+  .nav-bar {
+    height: 5rem;
+    flex-direction: column;
+    padding-top: 4px;
+  }
+  .nav-bar .logo img {
+    width: 4rem;
+  }
+}/*# sourceMappingURL=Navbar.css.map */

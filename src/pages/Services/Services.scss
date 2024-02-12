@@ -1,0 +1,114 @@
+.services-page {
+  display: flex;
+  flex-direction: column;
+  height: 5rem;
+  flex-wrap: nowrap;
+
+  .project-lists {
+    margin-top: 10%;
+    display: flex;
+    flex: 1;
+    align-items: stretch;
+    justify-content: center;
+    transform: translate(0px, 0px);
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .project {
+    align-items: center;
+    background-color: transparent;
+    border-radius: 35px;
+    flex: 1;
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    transform-origin: center center;
+    transition-duration: 600ms;
+    width: auto;
+    max-width: 100%;
+    padding: 30px;
+  }
+
+  .project:hover {
+    flex: 2;
+    width: auto;
+    max-width: 100vw;
+    height: 100%;
+  }
+
+  .project-info {
+    align-items: flex-start;
+    flex: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: 0px;
+    width: 100%;
+    z-index: 3;
+    max-width: 100%;
+  }
+
+  .project-name {
+    align-items: flex-start;
+    flex: none;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 0px;
+    width: 100%;
+    max-width: 100%;
+    font-weight: 400;
+    text-align: center;
+    color: #002d5b;
+  }
+
+  .project-divider {
+    background: rgba(0, 0, 0, 0);
+    border-bottom: 1px dotted rgba(255, 255, 255, 0.2);
+    border-left: 0px dotted rgba(255, 255, 255, 0.2);
+    border-right: 0px dotted rgba(255, 255, 255, 0.2);
+    border-top: 0px dotted rgba(255, 255, 255, 0.2);
+    flex: none;
+    height: 10px;
+    width: 701px;
+    max-width: 100%;
+  }
+
+  .project-description {
+    align-items: flex-start;
+    flex: none;
+    flex-direction: column;
+    height: auto;
+    justify-content: flex-start;
+    margin: 70px 0px 0px 0px;
+    padding: 0px;
+    width: 660px;
+    max-width: 100%;
+  }
+
+  .project-description p {
+    color: var(--text-black);
+  }
+
+  @media screen and (max-width: 1280px) {
+    .services-page {
+      margin-right: 0rem;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    .project-lists {
+      flex-direction: column;
+      flex-wrap: nowrap;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .services-page {
+      padding-left: 40px;
+      padding-right: 40px;
+      height: auto;
+    }
+  }
+}

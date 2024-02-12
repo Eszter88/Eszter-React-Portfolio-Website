@@ -1,0 +1,53 @@
+@use "../../../assets/styles/globals/breakpoints" as b;
+
+.rm-column {
+  display: flex;
+  max-height: 100vh;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 4rem;
+}
+
+.rm-card {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  max-width: fit-content;
+  background-color: var(--accent-color);
+  max-width: fit-content;
+  padding-top: 1rem;
+
+  li {
+    list-style-type: none;
+
+    .char-name {
+      color: var(--bg-dark);
+      font-weight: bold;
+      font-size: 20px;
+      text-decoration: underline;
+    }
+  }
+}
+
+.rm-card:hover {
+  opacity: 0.8;
+  cursor: grab;
+}
+
+.rm-card > li > p {
+  font-size: 1rem;
+  color: var(--bg-dark);
+  text-align: center;
+}
+
+@media (min-width: b.$desktop-breakpoint) {
+  .container.rickymorty-page {
+    padding-right: 0;
+
+    .text-zone {
+      width: calc(50% - 6rem);
+    }
+  }
+}

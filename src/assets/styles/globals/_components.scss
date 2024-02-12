@@ -1,0 +1,42 @@
+//Buttons
+
+button,
+.btn {
+  color: var(--accent-color);
+  background-color: transparent;
+  letter-spacing: 4px;
+  text-decoration: none;
+  padding: 10px 18px;
+  border: 1px solid var(--accent-color);
+  border-radius: 5px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  float: left;
+  animation: fadeInAnimation 1s 1.8s backwards;
+  white-space: nowrap;
+}
+button:hover,
+.btn:hover {
+  background: var(--accent-color);
+  color: #333;
+  cursor: pointer;
+}
+
+.button-double {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+// Scrollbar
+body::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--bg-navigation);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--accent-color);
+}
